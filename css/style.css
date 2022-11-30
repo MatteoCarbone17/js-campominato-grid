@@ -1,8 +1,17 @@
-section.main-bg-color{
+.main-bg-color{
     background-color: rgb(127, 255, 212);
 }
 
 
-footer{
-    height: 150px;
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: solid 3px black;
+}
+
+.grid{
+    height: 800px;
+    border: solid 3px black;
+    flex-wrap: wrap;
 }

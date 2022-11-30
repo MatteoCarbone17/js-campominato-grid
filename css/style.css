@@ -10,8 +10,12 @@
     border: solid 3px black;
 }
 
+.active{
+    background-color: cyan;
+}
+
 .grid{
-    height: 800px;
+    height: 1000px;
     border: solid 3px black;
-    flex-wrap: wrap;
+    
 }

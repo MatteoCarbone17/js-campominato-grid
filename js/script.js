@@ -10,18 +10,33 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 const gridContainer = document.querySelector('section.grid');
 
-const newSquare = document.createElement('div');
 
-newSquare.classList.add('square');
 
-gridContainer.appendChild(newSquare);
 
+// il for che cicla l'elemento newsquare
 
 for (let i = 1; i < 100; i++) {
-    const newSquare = document.createElement('div');
-
-    newSquare.classList.add('square');
+   
+    const newSquare = getElementNewSquare(); 
     
     gridContainer.appendChild(newSquare); 
     
+}
+
+
+//funzione che crea il quadrato
+
+function getElementNewSquare() {
+    
+    const newSquare = document.createElement('div');
+
+    newSquare.classList.add('square');
+
+    newSquare.addEventListener("click", function() {
+        console.warn("hai cliccato");
+        newSquare.classList.toggle('active');
+    })
+
+    return newSquare;
+
 }
